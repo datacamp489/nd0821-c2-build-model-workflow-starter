@@ -30,7 +30,7 @@ def go(args):
     df['last_review'] = pd.to_datetime(df['last_review'])
     # Upload
     df.to_csv("clean_sample.csv", index=False)
-    logger.info(f"Uploading {args.output_artifact} from Weights & Biases")
+    logger.info(f"Uploading {args.output_artifact} to Weights & Biases")
     artifact = wandb.Artifact(args.output_artifact, type=args.output_type, description=args.output_description)
     artifact.add_file("clean_sample.csv")
     run.log_artifact(artifact)
