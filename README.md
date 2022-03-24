@@ -9,6 +9,7 @@ In this project you will build such a pipeline.
 ## Table of contents
 
 - [Introduction](#build-an-ML-Pipeline-for-Short-Term-Rental-Prices-in-NYC)
+- [Project Submission](#project-submission)
 - [Preliminary steps](#preliminary-steps)
   * [Fork the Starter Kit](#fork-the-starter-kit)
   * [Create environment](#create-environment)
@@ -30,6 +31,12 @@ In this project you will build such a pipeline.
   * [Release the pipeline](#release-the-pipeline)
   * [Train the model on a new data sample](#train-the-model-on-a-new-data-sample)
 - [Cleaning up](#cleaning-up)
+
+## Project submission
+Links to this repository and the public W&B Project:
+
+* [Weights & Biases: nyc_airbnb](https://wandb.ai/datacamp489/nyc_airbnb)
+* [This repository: nyc_airbnb](https://github.com/datacamp489/nd0821-c2-build-model-workflow-starter)
 
 ## Preliminary steps
 ### Fork the Starter kit

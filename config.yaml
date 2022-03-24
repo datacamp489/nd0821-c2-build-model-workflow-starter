@@ -5,6 +5,20 @@ main:
   project_name: nyc_airbnb
   experiment_name: development
   steps: all
+artifacts:
+  download:
+    artifact_name: "sample.csv"
+    artifact_type: "raw_data"
+    artifact_description: "Raw file as downloaded"
+  basic_cleaning:
+    output_artifact: "clean_sample.csv"
+    output_type: "clean_sample"
+    output_description: "Data with outliers and null values removed"
+  train_random_forest:
+    trainval_artifact: "trainval_data.csv:latest"
+    output_artifact: "random_forest_export"
+  test_regression_model:
+    test_dataset: "test_data.csv:latest"  
 etl:
   sample: "sample1.csv"
   min_price: 10  # dollars
